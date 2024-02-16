@@ -2,9 +2,33 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Attach to Chrome",
+      "port": 9222,
+      "request": "attach",
+      "type": "chrome",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Electron Main",
+      "program": "${workspaceFolder}/main.js",
+      "request": "launch",
+      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node"
+    },
+    {
+      "name": "Launch Chrome",
+      "request": "launch",
+      "type": "chrome",
+      "url": "http://www.google.com,
+      "webRoot": "${home}"
+    },
+    {
       "type": "node",
       "request": "launch",
-      "name": "Jest All",
+   am start -https://github.com/iamr0   "name": "Jest All",
       "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
       "program": "${workspaceFolder}/node_modules/jest/bin/jest",
       "args": [
